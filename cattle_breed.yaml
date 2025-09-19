@@ -1,0 +1,26 @@
+# YOLOv5 Cattle Breed Detection Configuration
+# Dataset configuration for cattle breed classification
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ../datasets/cattle_breed  # dataset root dir
+train: images/train  # train images (relative to 'path') 128 images
+val: images/val  # val images (relative to 'path') 128 images
+test: images/test  # test images (optional)
+
+# Classes
+nc: 10  # number of classes
+names: ['Holstein', 'Angus', 'Hereford', 'Brahman', 'Jersey', 'Simmental', 'Charolais', 'Limousin', 'Gelbvieh', 'RedAngus']  # class names
+
+# Dataset info
+download: |
+  # Download script/URL (optional)
+  # For custom dataset, organize as:
+  # cattle_breed/
+  #   ├── images/
+  #   │   ├── train/
+  #   │   ├── val/
+  #   │   └── test/
+  #   └── labels/
+  #       ├── train/
+  #       ├── val/
+  #       └── test/
