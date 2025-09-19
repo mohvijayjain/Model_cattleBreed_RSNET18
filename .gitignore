@@ -129,9 +129,9 @@ Desktop.ini
 *.tmp
 *.temp
 
-# Model checkpoints (too large for GitHub - see README for download)
-*.pth
-*.pkl
+# Model checkpoints (tracked with Git LFS)
+# *.pth files are now tracked with Git LFS
+# *.pkl
 
 # Dataset folders (if you add them later)
 datasets/

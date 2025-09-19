@@ -29,12 +29,21 @@ cattle-breed-ai/
 
 ## 📦 Model Download
 
-**⚠️ Important**: The trained model file is too large for GitHub (128MB).
+**✅ Model Included**: The trained model is included using Git LFS!
 
-**Get the model file:**
-- **Contact**: [@mohvijayjain](https://github.com/mohvijayjain) for the trained model
-- **File**: `stable_cattle_model.pth` (128MB)
-- **Place in**: `models/` directory
+**After cloning the repository:**
+```bash
+# Clone the repository
+git clone https://github.com/mohvijayjain/Model_cattleBreed_RSNET18.git
+cd Model_cattleBreed_RSNET18
+
+# Download the model file (if not automatically downloaded)
+git lfs pull
+```
+
+**Model Details:**
+- **File**: `models/stable_cattle_model.pth` (128MB)
+- **Storage**: Git LFS (Large File Storage)
 - **Alternative**: Train your own using `scripts/stable_gpu_train.py`
 
 ## 🚀 Quick Start
@@ -44,8 +53,14 @@ cattle-breed-ai/
 pip install -r requirements.txt
 ```
 
-### 2. Get Model File
-Download `stable_cattle_model.pth` and place in `models/` folder
+### 2. Clone Repository
+```bash
+git clone https://github.com/mohvijayjain/Model_cattleBreed_RSNET18.git
+cd Model_cattleBreed_RSNET18
+
+# If model doesn't download automatically:
+git lfs pull
+```
 
 ### 3. Run Prediction
 ```bash
@@ -106,10 +121,23 @@ def predict():
 
 ## 📦 Dependencies
 
+```bash
+pip install -r requirements.txt
+```
+
+**Requirements:**
 - torch>=1.9.0
 - torchvision>=0.10.0  
 - Pillow>=8.0.0
 - PyYAML>=5.4.0
+
+**Git LFS:** Required for downloading the model file
+```bash
+# Install Git LFS if not already installed
+# Windows: Download from https://git-lfs.github.io/
+# Linux: sudo apt install git-lfs
+# macOS: brew install git-lfs
+```
 
 ## 🔧 Training Your Own Model
 
